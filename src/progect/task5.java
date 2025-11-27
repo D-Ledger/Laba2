@@ -10,15 +10,16 @@ public class task5 {
 		System.out.println("Введите число: ");
 		int number = in.nextInt();
 		
-		int negativeNumber = Math.abs(number);
+		int absNumber = Math.abs(number);
 		
-		int lastDigit = (negativeNumber / 1000) % 10;
+		int lastDigit = (absNumber / 1000) % 10;
 		
 		System.out.println("Четвертая цифра справа в десятичном представлении числа " + number + ": " + lastDigit);
 
-        int totalNumber = negativeNumber / 1000;
+        int totalNumber = absNumber / 1000;
         System.out.println("Всего тысяч в числе: " + totalNumber);
         
         in.close();
 	}
 }
+
